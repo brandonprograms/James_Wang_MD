@@ -150,8 +150,17 @@ h1 {
 
 h2 {
     display:flex;
+    align-items: right;
     font-size: 30px;
 
+}
+
+.nav-items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
 }
 
 .portfolio-h2 {
@@ -166,6 +175,7 @@ p {
 
 .logo {
     height: 60px;
+    align-items: center;
 }
 
 .subsection {
@@ -173,6 +183,7 @@ p {
     justify-content: space-around;
     padding: 30px;
     width: 100vw;
+    height: 50vh;
 }
 
 .contact-subsection {
@@ -217,12 +228,17 @@ p {
     padding: 30px;
     text-align: center;
     overflow: auto;
+    height: 50vh;
 }
 
 @media only screen and (max-width: 1000px) {
     .project-container {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    nav {
+        height: 10vh;
     }
 }
 
