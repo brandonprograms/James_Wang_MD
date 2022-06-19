@@ -1,0 +1,252 @@
+body {
+    font-family: 'Poppins', serif;
+    margin: 0;
+    width: 100%;
+}
+
+section {
+    height: 75vh;
+    background-color:azure;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    background-color:white;
+    background-image: ('images\FaceModel2.png');
+    height: 75vh;
+    width: 100vw;
+    font-size: 20px;
+
+}
+
+.hero-text-left {
+    /* margin-top: 25%;
+    margin-left: 80px;
+    margin-bottom: 25%;
+    width: 50vw; */
+
+    display:flex;
+    white-space: nowrap;
+    padding-right: 25px;
+    justify-content: left;
+    align-items: center;
+}
+
+.hero-text-right {
+    /* margin-top: 25%;
+    margin-left: 80px;
+    margin-bottom: 25%;
+    width: 50vw; */
+
+    display:flex;
+    white-space: nowrap;
+    padding-left: 13px;
+    justify-content: left;
+    align-items: center;
+}
+
+.hero-area {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+.hero-banner{
+    Height: 33%;
+}
+.vl {
+    border-left: 6px solid grey;
+    height: 25%;
+    top: 50vh;
+    left: 50%;
+    margin-left: -3px;
+    display: flex;
+    padding-right: 10%;
+  }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 10%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    width: 100px;
+    height: 100%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+   */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  } */
+
+footer {
+    height: 500px;
+    background-color: azure;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    background-color:whitesmoke;
+    position: fixed;
+    width: 100%; 
+    margin-top: 0;
+}
+
+ul {
+    display:flex;
+    list-style-type:none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+li {
+    text-decoration: none;
+}
+
+.button {
+    width: 75px;
+    height: 25px;
+    background-color:rgb(48, 112, 231);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    display:flex;
+    font-size: 30px;
+
+}
+
+.portfolio-h2 {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.logo {
+    height: 60px;
+}
+
+.subsection {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    width: 100vw;
+}
+
+.contact-subsection {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+    width: 100vw;
+
+}
+
+.portrait {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.project-card {
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 20px;
+}
+
+.project-image {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.project-container {
+    display:flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.portfolio-subsection {
+    background-color: white;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    padding: 2vw 4vw;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    border-radius: 10px;
+    font-family: 'Poppins', serif;
+}
+
+form button {
+    padding: 15px;
+    border: 0px;
+    outline: none;
+    width: 150px;
+    font-family: 'Poppins', serif;
+}
