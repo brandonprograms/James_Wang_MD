@@ -234,6 +234,13 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
+    .logo {
+        height: 10vh;
+    }
+    .nav-items, a {
+        font-size: 30px;
+    }
+
     .subsection {
         height: 100vh;
     }
@@ -241,7 +248,7 @@ p {
     .portfolio-subsection {
         height: 100vh;
     }
-    
+
     .hero {
         height: 100vh;
     }
