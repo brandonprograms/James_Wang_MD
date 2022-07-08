@@ -184,7 +184,7 @@ p {
     justify-content: space-around;
     padding: 30px;
     width: 100vw;
-    height: 50vh;
+    height: 75vh;
 }
 
 .contact-subsection {
@@ -200,6 +200,15 @@ p {
     width: 250px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px grey;
+}
+
+.information {
+    font-size: 20px;
+}
+
+.about-section {
+    display:flex;
+    height: 100vh;
 }
 
 .project-card {
