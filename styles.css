@@ -185,6 +185,7 @@ p {
     padding: 30px;
     width: 100vw;
     height: 75vh;
+    overflow: auto;
 }
 
 .contact-subsection {
@@ -204,6 +205,7 @@ p {
 
 .information {
     font-size: 20px;
+
 }
 
 .about-section {
