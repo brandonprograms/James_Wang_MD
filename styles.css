@@ -6,7 +6,7 @@ body {
 
 section {
     height: 75vh;
-    background-color:azure;
+    background-color:lightsteelblue;
     width: 100%;
 }
 
@@ -62,6 +62,7 @@ a {
 .hero-banner{
     Height: 33%;
 }
+
 .vl {
     border-left: 6px solid grey;
     height: 25%;
@@ -71,6 +72,29 @@ a {
     display: flex;
     padding-right: 10%;
   }
+
+.vl-nav {
+    border-left: 3px solid grey;
+    height: 60px;
+
+    margin-left: 1%;
+    margin-top: 4px;
+    display: flex;
+  }
+
+.logo-right-text {
+    font-size: 20px;
+    margin-left: 20px;
+    word-wrap:nowrap;
+    justify-content: left;
+    margin-right: 10%;
+    align-self: right;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -110,16 +134,23 @@ a {
 
 footer {
     height: 500px;
-    background-color: azure;
+    background-color: lightsteelblue;
 }
 
 nav {
     display:flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color:whitesmoke;
     position: fixed;
     width: 100%; 
     margin-top: 0;
+}
+
+.nav-jump{
+    height:10vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 ul {
@@ -156,11 +187,13 @@ h2 {
 }
 
 .nav-items {
-
+    align-self: right;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    margin-right: 0;
+    margin-left: 50%;
 }
 
 .portfolio-h2 {
@@ -185,13 +218,14 @@ p {
     padding: 30px;
     width: 100vw;
     height: 75vh;
-    overflow: auto;
+    overflow:hidden;
+    position: relative;
 }
 
 .contact-subsection {
     display: flex;
     flex-direction: column;
-
+    
     padding: 30px;
     width: 100vw;
 
@@ -242,14 +276,40 @@ p {
     text-align: center;
     overflow: auto;
     height: 50vh;
+    position: relative;
+}
+
+.blank-space {
+    height: 15vh;
 }
 
 @media only screen and (max-width: 1000px) {
+    p {
+        font-size: 25px;
+    }
+
+    table {
+        font-size: 25px;
+    }
+
     .logo {
-        height: 10vh;
+        height: 5vh;
+        justify-content: center;
+        display: flex;
+        margin-top: 5%;
     }
     .nav-items, a {
         font-size: 30px;
+        margin-left:0;
+        margin-right:10%;
+    }
+
+    .logo-right-text {
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        white-space: nowrap;
+        margin-right: 0;
     }
 
     .subsection {
@@ -266,6 +326,7 @@ p {
 
     .contact-subsection {
         height: 100vh;
+
     }
 
     .project-container {
@@ -275,7 +336,16 @@ p {
 
     nav {
         height: 10vh;
+        z-index:10;
     }
+
+    .vl-nav {
+        border-left: 6px solid grey;
+        height: 75%;
+        
+        margin-top: 2%;
+        display: flex;
+      }
 
     form {
         display: flex;
